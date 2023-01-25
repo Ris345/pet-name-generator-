@@ -1,13 +1,10 @@
 const express = require('express')
 const app = express()
-const port = 3001
+const port = 5000
 require("dotenv").config();
 const OpenAI = require('openai-api');
 const OPENAI_API_KEY = process.env.API_KEY;
-
 const openai = new OpenAI(OPENAI_API_KEY);
-
-
 
 (async () => {
     const gptResponse = await openai.complete({
