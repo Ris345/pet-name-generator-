@@ -24,8 +24,8 @@ const openai = new OpenAI(OPENAI_API_KEY);
     console.log(gptResponse.data);
 })();
 
-
-app.get('/', (req, res) => {
+// always need to make a post request 
+app.post('/', (req, res) => {
   res.send('Hello World!')
 })
 
