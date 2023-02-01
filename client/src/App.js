@@ -6,6 +6,8 @@ function App() {
 
   // make a post request here
 
+
+
   return (
     <div className="App">
       <input className="input-area"></input>
